@@ -1,16 +1,28 @@
-# Amarya Levy — Portfolio
+# Amarya Levy-Mazie — Portfolio
 
-A simple static portfolio site: `index.html`, `style.css`, `script.js`. No build step, no dependencies — just open `index.html` or serve the folder.
+A simple static portfolio site with a home page and separate pages per section. No build step, no dependencies — just open `index.html` or serve the folder.
+
+## Pages
+
+- `index.html` — Home: intro, "What I Study" cards, and links into the other pages
+- `about.html` — About / bio
+- `education.html` — Education
+- `research.html` — Honors Thesis & Research
+- `tutoring.html` — Tutoring & Teaching
+- `contact.html` — Contact
+
+Each page shares the same header/nav and footer (duplicated per file since there's no build step — if you add a new page, copy the header/nav/footer markup from an existing one and update the `active` class).
 
 ## Editing content
 
-Sections to personalize (each has an HTML comment marking placeholder text):
+Placeholder text is marked with HTML comments in each file:
 
-- **Hero / About** (`index.html`, `#top` and `#about`) — intro blurb and bio
-- **Education** (`#education`) — coursework, honors, activities
-- **Honors Thesis & Research** (`#thesis`) — working title, advisor, description
-- **Tutoring & Teaching** (`#tutoring`) — subjects and approach
-- **Contact** (`#contact`) — LinkedIn URL, résumé link
+- `index.html` — hero intro blurb
+- `about.html` — bio
+- `education.html` — coursework, honors, activities
+- `research.html` — thesis working title, advisor, description
+- `tutoring.html` — tutoring description
+- `contact.html` — LinkedIn URL, résumé link
 
 ## Adding your résumé
 
