@@ -363,6 +363,18 @@ h1, h2, h3 {
 }
 .entry-list li { margin-bottom: 6px; }
 
+.subhead {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  margin: 28px 0 8px;
+}
+
+.research-contact { margin-top: 28px; }
+
 .entry-role-text {
   font-weight: 500;
   color: var(--blue-deep);
