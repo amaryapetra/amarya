@@ -379,6 +379,7 @@ h1, h2, h3 {
   flex-wrap: wrap;
 }
 
+.entry-head h2,
 .entry-head h3 {
   font-size: 1.1rem;
   margin-bottom: 4px;

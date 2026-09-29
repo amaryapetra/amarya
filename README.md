@@ -1,24 +1,25 @@
 # Amarya Levy-Mazie — Portfolio
 
-A simple static portfolio site with a home page and separate pages per section. No build step, no dependencies — just open `index.html` or serve the folder.
+Personal portfolio site for Amarya Levy-Mazie, a Tulane University student pursuing a B.S. in Mathematics & Economics and a B.A. in Jewish Studies (Class of 2027).
+
+**Live site:** https://amaryapetra.github.io/amarya/
 
 ## Pages
 
-- `index.html` — Home: intro, "What I Study" cards, and links into the other pages
-- `about.html` — About / bio
-- `research.html` — Honors Thesis & Research
-- `tutoring.html` — Tutoring & Teaching
-- `contact.html` — Contact
+- `index.html` — Home: introduction, areas of study, and an overview of the site
+- `about.html` — Background and interests
+- `research.html` — Honors thesis
+- `tutoring.html` — Tutoring and teaching experience
+- `contact.html` — Email, LinkedIn, and résumé
+- `404.html` — Custom "page not found" page
 
-Each page shares the same header/nav and footer (duplicated per file since there's no build step — if you add a new page, copy the header/nav/footer markup from an existing one and update the `active` class).
+## Built with
 
-## Editing content
-
-Content is filled in from `resume.pdf`. The headshot is `headshot.webp`.
-
-## Adding your résumé
-
-Drop a PDF named `resume.pdf` in this folder — the "Download résumé" links already point to it.
+- Hand-written HTML and CSS with a small amount of JavaScript for the mobile menu — no frameworks or build step
+- Responsive layout with a collapsible menu on phones and tablets
+- Automatic dark mode based on the visitor's system setting
+- Accessibility: skip-to-content link, visible keyboard focus, `aria-current` navigation, and descriptive alt text
+- Meta descriptions, Open Graph tags, and a favicon on every page
 
 ## Running locally
 
@@ -28,6 +29,6 @@ python3 -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-## Deploying
+## Deployment
 
-This is a static site, so it works as-is on GitHub Pages, Netlify, or Vercel. For GitHub Pages: Settings → Pages → set source to the `main` branch, root folder.
+Published with GitHub Pages from the `main` branch (root folder). Changes are made on a feature branch and merged through pull requests.
