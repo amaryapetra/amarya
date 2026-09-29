@@ -7,6 +7,7 @@ A simple static portfolio site with a home page and separate pages per section. 
 - `index.html` — Home: intro, "What I Study" cards, and links into the other pages
 - `about.html` — About / bio
 - `education.html` — Education
+- `experience.html` — Work & leadership experience
 - `research.html` — Honors Thesis & Research
 - `tutoring.html` — Tutoring & Teaching
 - `contact.html` — Contact
@@ -15,14 +16,7 @@ Each page shares the same header/nav and footer (duplicated per file since there
 
 ## Editing content
 
-Placeholder text is marked with HTML comments in each file:
-
-- `index.html` — hero intro blurb
-- `about.html` — bio
-- `education.html` — coursework, honors, activities
-- `research.html` — thesis working title, advisor, description
-- `tutoring.html` — tutoring description
-- `contact.html` — LinkedIn URL, résumé link
+Content is filled in from `resume.pdf`. The one remaining gap is `research.html` — look for the `TODO` comments to add the thesis working title, advisor, and description.
 
 ## Adding your résumé
 
