@@ -22,6 +22,10 @@ Personal portfolio site for Amarya Levy-Mazie, a Tulane University student pursu
 - Accessibility: skip-to-content link, visible keyboard focus, `aria-current` navigation, and descriptive alt text
 - Meta descriptions, Open Graph tags, and a favicon on every page
 
+## Updating CSS or JavaScript
+
+Pages load `style.css` and `script.js` with a version number (for example `style.css?v=2`) so browsers do not keep an old cached copy. After changing either file, increase the number in every page.
+
 ## Running locally
 
 ```bash
