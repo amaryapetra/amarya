@@ -408,41 +408,50 @@ h1, h2, h3 {
 
 .entry-role {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 0 0 14px;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0 0 12px;
 }
 
 .role-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  padding: 5px 12px;
-  border-radius: 999px;
-}
-
-.chip-pink { background: var(--pink); color: var(--pink-text); }
-.chip-blue { background: var(--blue); color: var(--blue-deep); }
-
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 20px;
-}
-
-.tag {
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   font-weight: 500;
-  padding: 6px 14px;
-  border-radius: 999px;
-  border: 1px solid transparent;
+  color: var(--blue-deep);
 }
 
-.tag-pink { background: var(--pink); color: var(--pink-text); }
-.tag-blue { background: var(--blue); color: var(--blue-deep); }
+.role-date {
+  margin-left: 6px;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+
+.subject-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 32px;
+}
+
+.subject-list li {
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+
+.subject-list strong {
+  display: block;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.02rem;
+}
+
+.subject-list span {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
 
 .contact-list {
   list-style: none;
