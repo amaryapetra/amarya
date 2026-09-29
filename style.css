@@ -569,6 +569,7 @@ h1, h2, h3 {
     --line: #382f3a;
     --card-bg: #2a2531;
   }
+  .site-header { background: rgba(32, 28, 34, 0.92); }
   .btn-primary { color: #17202a; }
   .btn-secondary:hover { background: var(--pink); color: #201c22; }
 }
