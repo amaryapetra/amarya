@@ -18,6 +18,7 @@ Personal portfolio site for Amarya Levy-Mazie, a Tulane University student pursu
 - Hand-written HTML and CSS with a small amount of JavaScript for the mobile menu — no frameworks or build step
 - Responsive layout with a collapsible menu on phones and tablets
 - Automatic dark mode based on the visitor's system setting
+- High-contrast mode: a footer toggle (remembered across pages) that also turns on automatically when a visitor's device requests more contrast
 - Accessibility: skip-to-content link, visible keyboard focus, `aria-current` navigation, and descriptive alt text
 - Meta descriptions, Open Graph tags, and a favicon on every page
 
