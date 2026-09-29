@@ -5,9 +5,7 @@ A simple static portfolio site with a home page and separate pages per section. 
 ## Pages
 
 - `index.html` — Home: intro, "What I Study" cards, and links into the other pages
-- `about.html` — About / bio
-- `education.html` — Education
-- `experience.html` — Work & leadership experience
+- `about.html` — About / bio, plus brief Education and Experience sections
 - `research.html` — Honors Thesis & Research
 - `tutoring.html` — Tutoring & Teaching
 - `contact.html` — Contact
