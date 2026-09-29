@@ -38,6 +38,26 @@ body {
 a { color: var(--blue-deep); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--blue-deep);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -48px;
+  z-index: 100;
+  padding: 8px 14px;
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-weight: 600;
+}
+.skip-link:focus { top: 12px; }
+
 h1, h2, h3 {
   font-family: var(--serif);
   font-weight: 600;
@@ -57,6 +77,8 @@ h1, h2, h3 {
 }
 
 .header-inner {
+  max-width: 1000px;
+  gap: 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -115,6 +137,26 @@ h1, h2, h3 {
 .hero {
   padding: 96px 24px 72px;
 }
+
+.hero-photo {
+  display: block;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 50%;
+  border: 4px solid var(--pink);
+  margin-bottom: 28px;
+}
+
+.about-photo {
+  float: right;
+  width: 220px;
+  height: auto;
+  margin: 4px 0 20px 32px;
+  border-radius: 16px;
+}
+.about-body::after { content: ""; display: block; clear: both; }
 
 .eyebrow {
   font-size: 0.82rem;
@@ -315,6 +357,12 @@ h1, h2, h3 {
   color: var(--blue-deep);
 }
 
+.entry-list {
+  margin: 0;
+  padding-left: 20px;
+}
+.entry-list li { margin-bottom: 6px; }
+
 .entry-role-text {
   font-weight: 500;
   color: var(--blue-deep);
@@ -429,15 +477,7 @@ h1, h2, h3 {
 
 /* Responsive */
 
-@media (max-width: 640px) {
-  .hero { padding: 64px 24px 48px; }
-  .hero h1 { font-size: 2.1rem; }
-
-  .field-grid,
-  .teaser-grid {
-    grid-template-columns: 1fr;
-  }
-
+@media (max-width: 860px) {
   .nav-toggle { display: flex; }
 
   .site-nav {
@@ -455,15 +495,35 @@ h1, h2, h3 {
   }
 
   .site-nav.open {
-    max-height: 320px;
+    max-height: 420px;
   }
 
   .site-nav a {
     padding: 14px 24px;
     border-top: 1px solid var(--line);
   }
+}
+
+
+@media (max-width: 640px) {
+  .hero { padding: 64px 24px 48px; }
+  .hero h1 { font-size: 2.1rem; }
+
+  .field-grid,
+  .teaser-grid {
+    grid-template-columns: 1fr;
+  }
 
   .entry-head { flex-direction: column; gap: 4px; }
+
+  .hero-photo { width: 128px; height: 128px; }
+
+  .about-photo {
+    float: none;
+    display: block;
+    width: 180px;
+    margin: 0 0 24px;
+  }
 }
 
 /* Dark mode */
