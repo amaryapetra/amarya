@@ -16,7 +16,7 @@ Each page shares the same header/nav and footer (duplicated per file since there
 
 ## Editing content
 
-Content is filled in from `resume.pdf`. The one remaining gap is `research.html` — look for the `TODO` comments to add the thesis working title, advisor, and description.
+Content is filled in from `resume.pdf`. The headshot is `headshot.webp`.
 
 ## Adding your résumé
 

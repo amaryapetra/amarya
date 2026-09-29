@@ -138,6 +138,26 @@ h1, h2, h3 {
   padding: 96px 24px 72px;
 }
 
+.hero-photo {
+  display: block;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 50%;
+  border: 4px solid var(--pink);
+  margin-bottom: 28px;
+}
+
+.about-photo {
+  float: right;
+  width: 220px;
+  height: auto;
+  margin: 4px 0 20px 32px;
+  border-radius: 16px;
+}
+.about-body::after { content: ""; display: block; clear: both; }
+
 .eyebrow {
   font-size: 0.82rem;
   font-weight: 600;
@@ -495,6 +515,15 @@ h1, h2, h3 {
   }
 
   .entry-head { flex-direction: column; gap: 4px; }
+
+  .hero-photo { width: 128px; height: 128px; }
+
+  .about-photo {
+    float: none;
+    display: block;
+    width: 180px;
+    margin: 0 0 24px;
+  }
 }
 
 /* Dark mode */
