@@ -13,6 +13,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    var pref = null;
+    try { pref = localStorage.getItem("contrast"); } catch (e) {}
+    var high = pref ? pref === "high" : window.matchMedia("(prefers-contrast: more)").matches;
+    if (high) document.documentElement.setAttribute("data-contrast", "high");
+  })();
+</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -54,7 +62,7 @@
   <section class="section wrap">
     <div class="entry">
       <div class="entry-head">
-        <h3>Supplemental Instructor</h3>
+        <h2>Supplemental Instructor</h2>
         <span class="entry-date">Jan 2025 – Present</span>
       </div>
       <p class="entry-role-text">Tulane Academic Learning &amp; Tutoring Center</p>
@@ -66,7 +74,7 @@
 
     <div class="entry">
       <div class="entry-head">
-        <h3>Private Economics Tutor</h3>
+        <h2>Private Economics Tutor</h2>
         <span class="entry-date">Sept 2024 – Present</span>
       </div>
       <p class="entry-role-text">Independent · New Orleans</p>
@@ -78,7 +86,7 @@
 
     <div class="entry">
       <div class="entry-head">
-        <h3>Afterschool Newcomb Tutoring Club</h3>
+        <h2>Afterschool Newcomb Tutoring Club</h2>
         <span class="entry-date">Sept 2024 – Present</span>
       </div>
       <p class="entry-role">
@@ -106,8 +114,9 @@
 </main>
 
 <footer class="site-footer">
-  <div class="wrap">
+  <div class="wrap footer-inner">
     <p>&copy; <span id="year"></span> Amarya Levy-Mazie. All rights reserved.</p>
+    <button class="contrast-toggle" id="contrastToggle" type="button" aria-pressed="false">High contrast</button>
   </div>
 </footer>
 

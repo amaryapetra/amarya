@@ -14,3 +14,22 @@ siteNav.querySelectorAll("a").forEach((link) => {
     navToggle.setAttribute("aria-expanded", "false");
   });
 });
+
+const contrastToggle = document.getElementById("contrastToggle");
+const root = document.documentElement;
+
+function syncContrastButton() {
+  const isHigh = root.getAttribute("data-contrast") === "high";
+  contrastToggle.setAttribute("aria-pressed", String(isHigh));
+  contrastToggle.textContent = isHigh ? "High contrast: On" : "High contrast: Off";
+}
+
+contrastToggle.addEventListener("click", () => {
+  const next = root.getAttribute("data-contrast") === "high" ? "normal" : "high";
+  if (next === "high") root.setAttribute("data-contrast", "high");
+  else root.removeAttribute("data-contrast");
+  try { localStorage.setItem("contrast", next); } catch (e) {}
+  syncContrastButton();
+});
+
+syncContrastButton();
