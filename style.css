@@ -433,6 +433,8 @@ h1, h2, h3 {
   gap: 0 32px;
 }
 
+.skills-list { grid-template-columns: repeat(3, 1fr); }
+
 .subject-list li {
   padding: 14px 0;
   border-top: 1px solid var(--line);
