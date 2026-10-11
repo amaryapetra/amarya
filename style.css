@@ -508,32 +508,6 @@ h1, h2, h3 {
   color: var(--ink-soft);
 }
 
-.glance {
-  list-style: none;
-  margin: 0 0 40px;
-  padding: 20px 24px;
-  border-radius: 14px;
-  background: var(--bg-blue);
-  border: 1px solid var(--line);
-}
-
-.glance li {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 16px;
-  padding: 10px 0;
-}
-.glance li + li { border-top: 1px solid var(--line); }
-
-.glance-label {
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--blue-deep);
-  padding-top: 3px;
-}
-
 /* Footer */
 
 .site-footer {
@@ -608,8 +582,6 @@ h1, h2, h3 {
   }
 
   .stat-row { grid-template-columns: 1fr 1fr; }
-
-  .glance li { grid-template-columns: 1fr; gap: 2px; }
 
   .entry-head { flex-direction: column; gap: 4px; }
 
