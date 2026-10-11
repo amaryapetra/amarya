@@ -44,6 +44,12 @@ body {
 a { color: var(--blue-deep); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
+/* Links inside running text are underlined so they don't rely on color alone */
+main p a:not(.btn) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--blue-deep);
@@ -107,7 +113,7 @@ h1, h2, h3 {
 
 .site-nav a {
   color: var(--ink-soft);
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   font-weight: 500;
   padding-bottom: 4px;
   border-bottom: 2px solid transparent;
@@ -165,7 +171,7 @@ h1, h2, h3 {
 .about-body::after { content: ""; display: block; clear: both; }
 
 .eyebrow {
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -304,7 +310,7 @@ h1, h2, h3 {
   border-radius: 50%;
   margin-bottom: 14px;
   font-family: var(--serif);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 600;
 }
 
@@ -358,7 +364,7 @@ h1, h2, h3 {
 }
 
 .teaser-link {
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--blue-deep);
 }
@@ -392,7 +398,7 @@ h1, h2, h3 {
 }
 
 .entry-date {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--ink-soft);
   white-space: nowrap;
 }
@@ -413,7 +419,7 @@ h1, h2, h3 {
 .role-date {
   margin-left: 6px;
   white-space: nowrap;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 400;
   color: var(--ink-soft);
 }
@@ -462,7 +468,7 @@ h1, h2, h3 {
 }
 
 .contact-label {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -503,7 +509,7 @@ h1, h2, h3 {
 
 .stat-row span {
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   line-height: 1.45;
   color: var(--ink-soft);
 }
@@ -516,7 +522,7 @@ h1, h2, h3 {
 
 .site-footer p {
   margin: 0;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--ink-soft);
 }
 
@@ -533,7 +539,7 @@ h1, h2, h3 {
   border: none;
   padding: 4px 0;
   font: inherit;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--ink-soft);
   text-decoration: underline;
   text-underline-offset: 3px;
