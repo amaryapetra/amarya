@@ -543,7 +543,8 @@ h1, h2, h3 {
   .hero h1 { font-size: 2.1rem; }
 
   .field-grid,
-  .teaser-grid {
+  .teaser-grid,
+  .subject-list {
     grid-template-columns: 1fr;
   }
 
