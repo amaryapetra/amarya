@@ -12,7 +12,7 @@ Personal portfolio site for Amarya Levy-Mazie, a Tulane University student pursu
 - `experience.html` — Teaching, leadership, and professional experience, plus skills
 - `tutoring.html` — Redirects to `experience.html` so old links keep working
 - `contact.html` — Email, LinkedIn, and résumé
-- `404.html` — Custom "page not found" page
+- `404.html` — Custom "page not found" page (uses absolute `/amarya/...` links because GitHub Pages serves it at any missing URL, however deep)
 
 ## Built with
 
