@@ -9,7 +9,8 @@ Personal portfolio site for Amarya Levy-Mazie, a Tulane University student pursu
 - `index.html` — Home: introduction, areas of study, and an overview of the site
 - `about.html` — Background and interests
 - `research.html` — Honors thesis
-- `tutoring.html` — Tutoring and teaching experience
+- `experience.html` — Teaching, leadership, and professional experience, plus skills
+- `tutoring.html` — Redirects to `experience.html` so old links keep working
 - `contact.html` — Email, LinkedIn, and résumé
 - `404.html` — Custom "page not found" page
 
