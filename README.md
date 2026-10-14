@@ -2,7 +2,7 @@
 
 Personal portfolio site for Amarya Levy-Mazie, a Tulane University student pursuing a B.S. in Mathematics & Economics and a B.A. in Jewish Studies (Class of 2027).
 
-**Live site:** https://amaryapetra.github.io/amarya/
+**Live site:** https://amaryalevymazie.com (custom domain; the old https://amaryapetra.github.io/amarya/ address redirects there)
 
 ## Pages
 
@@ -12,7 +12,7 @@ Personal portfolio site for Amarya Levy-Mazie, a Tulane University student pursu
 - `experience.html` — Teaching, leadership, and professional experience, plus skills
 - `tutoring.html` — Redirects to `experience.html` so old links keep working
 - `contact.html` — Email, LinkedIn, and résumé
-- `404.html` — Custom "page not found" page (uses absolute `/amarya/...` links because GitHub Pages serves it at any missing URL, however deep)
+- `404.html` — Custom "page not found" page (uses root-relative `/...` links because GitHub Pages serves it at any missing URL, however deep)
 
 ## Built with
 
@@ -37,4 +37,4 @@ Then visit `http://localhost:8000`.
 
 ## Deployment
 
-Published with GitHub Pages from the `main` branch (root folder). Changes are made on a feature branch and merged through pull requests.
+Published with GitHub Pages from the `main` branch (root folder). The custom domain `amaryalevymazie.com` is set in the repository's Pages settings, with DNS on Cloudflare: four `A` records for the apex and a `www` `CNAME` to `amaryapetra.github.io`, all set to DNS only (not proxied) so GitHub can issue the HTTPS certificate. Changes are made on a feature branch and merged through pull requests.
